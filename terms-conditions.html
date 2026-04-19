@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms &amp; Conditions — हनुमान चालीसा · Hanuman Chalisa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron:   #FF8C00;
+    --kesari:    #FF5A00;
+    --gold:      #FFB300;
+    --bg0:       #0A0200;
+    --bg1:       #120500;
+    --bg2:       #1E0900;
+    --bg3:       #2D1200;
+    --text:      #FFF8F0;
+    --text-muted:#C8843A;
+    --text-dim:  #7A4A1A;
+    --sep:       rgba(255,140,0,0.15);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--bg0);
+    color: var(--text);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 15px;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,90,0,0.08) 0%, transparent 70%),
+      radial-gradient(circle at 10% 80%, rgba(255,140,0,0.04) 0%, transparent 50%),
+      radial-gradient(circle at 90% 20%, rgba(255,179,0,0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 60px 24px 48px;
+    border-bottom: 1px solid var(--sep);
+  }
+
+  .hero-om { font-size: 52px; margin-bottom: 8px; display: block; filter: drop-shadow(0 0 20px rgba(255,140,0,0.5)); }
+  .hero-app { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 4px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 20px; }
+
+  .hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(22px, 5vw, 36px);
+    font-weight: 700;
+    color: var(--saffron);
+    line-height: 1.25;
+    margin-bottom: 6px;
+    text-shadow: 0 0 40px rgba(255,140,0,0.3);
+  }
+  .hero h1 span { display: block; font-size: 0.6em; color: var(--gold); opacity: 0.8; font-weight: 400; }
+  .badge { display: inline-block; margin-top: 18px; padding: 5px 16px; border: 1px solid var(--sep); border-radius: 20px; font-size: 12px; color: var(--text-dim); letter-spacing: 1px; }
+
+  .ornament { text-align: center; margin: 36px 0 28px; position: relative; }
+  .ornament::before, .ornament::after { content: ''; display: inline-block; width: 80px; height: 1px; vertical-align: middle; margin: 0 12px; }
+  .ornament::before { background: linear-gradient(to right, transparent, var(--text-dim)); }
+  .ornament::after  { background: linear-gradient(to left,  transparent, var(--text-dim)); }
+  .ornament span { color: var(--saffron); font-size: 14px; }
+
+  .section { margin-bottom: 40px; background: rgba(255,140,0,0.03); border: 1px solid var(--sep); border-radius: 16px; overflow: hidden; }
+  .section-header { display: flex; align-items: center; gap: 14px; padding: 18px 24px 14px; border-bottom: 1px solid var(--sep); background: rgba(255,90,0,0.05); }
+  .section-num { font-family: 'Cinzel', serif; font-size: 11px; font-weight: 600; color: var(--kesari); background: rgba(255,90,0,0.15); padding: 3px 9px; border-radius: 6px; letter-spacing: 1px; flex-shrink: 0; }
+  .section-title .hi { font-size: 15px; font-weight: 700; color: var(--gold); display: block; }
+  .section-title .en { font-size: 12px; color: rgba(255,179,0,0.55); letter-spacing: 0.5px; }
+  .section-body { padding: 20px 24px; color: rgba(255,248,240,0.8); font-size: 14px; line-height: 1.9; }
+  .section-body p { margin-bottom: 12px; }
+  .section-body p:last-child { margin-bottom: 0; }
+
+  .sub-heading { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 2px; color: var(--saffron); margin: 16px 0 8px; text-transform: uppercase; }
+
+  .highlight { background: rgba(255,140,0,0.07); border-left: 3px solid var(--saffron); border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 12px 0; font-size: 13.5px; }
+
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 4px 0 4px 20px; position: relative; font-size: 14px; color: rgba(255,248,240,0.75); }
+  ul.clean li::before { content: '•'; position: absolute; left: 4px; color: var(--kesari); }
+
+  .tag { display: inline-block; background: rgba(255,90,0,0.12); border: 1px solid rgba(255,90,0,0.25); color: var(--saffron); font-size: 11px; padding: 2px 10px; border-radius: 12px; margin: 2px 3px 2px 0; font-family: 'Cinzel', serif; letter-spacing: 0.5px; }
+
+  .contact-card { background: rgba(255,140,0,0.06); border: 1px solid var(--sep); border-radius: 12px; padding: 18px 22px; margin-top: 8px; }
+  .contact-card a { color: var(--saffron); text-decoration: none; border-bottom: 1px solid rgba(255,140,0,0.3); }
+
+  .footer { text-align: center; padding: 40px 24px 20px; border-top: 1px solid var(--sep); color: var(--text-dim); font-size: 13px; line-height: 2; }
+  .footer-logo { font-family: 'Cinzel', serif; font-size: 18px; color: var(--saffron); margin-bottom: 6px; }
+
+  code { font-family: monospace; font-size: 12px; background: rgba(255,140,0,0.1); padding: 1px 6px; border-radius: 4px; color: var(--saffron); }
+
+  @media (max-width: 600px) {
+    .section-body { padding: 16px 18px; }
+    .section-header { padding: 14px 18px 12px; }
+    .hero { padding: 40px 16px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <span class="hero-om">📜</span>
+    <p class="hero-app">com.yunok.hanuman.app</p>
+    <h1>
+      उपयोग की शर्तें
+      <span>Terms &amp; Conditions</span>
+    </h1>
+    <div class="badge">Last Updated · अंतिम अपडेट: April 2025</div>
+  </div>
+
+  <div class="ornament"><span>✦ ॥ जय बजरंग बली ॥ ✦</span></div>
+
+  <!-- 1. Acceptance -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <div class="section-title">
+        <span class="hi">शर्तों की स्वीकृति</span>
+        <span class="en">Acceptance of Terms</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p><strong>Hanuman Chalisa</strong> ऐप (<code>com.yunok.hanuman.app</code>) डाउनलोड या उपयोग करके आप इन शर्तों से सहमत होते हैं।</p>
+      <p>By downloading or using the <strong>Hanuman Chalisa</strong> app, you agree to be bound by these Terms &amp; Conditions.</p>
+      <div class="highlight">यदि आप इन शर्तों से सहमत नहीं हैं, कृपया ऐप का उपयोग न करें।<br>If you do not agree with these terms, please do not use the app.</div>
+    </div>
+  </div>
+
+  <!-- 2. About the App -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <div class="section-title">
+        <span class="hi">ऐप का विवरण</span>
+        <span class="en">About the App</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>Hanuman Chalisa एक मुफ्त, धार्मिक और आध्यात्मिक ऐप है जो निम्नलिखित प्रदान करता है:<br>
+         Hanuman Chalisa is a free, religious and spiritual app that provides:</p>
+      <ul class="clean" style="margin-top:10px;">
+        <li>हनुमान चालीसा (40 चौपाइयाँ + अर्थ) · Hanuman Chalisa with meanings</li>
+        <li>आरती संग्रह · Aarti Collection</li>
+        <li>बजरंग बाण, संकट मोचन, सुन्दर काण्ड · Bajrang Baan, Sankat Mochan, Sundar Kand</li>
+        <li>मंत्र जाप काउंटर · Mantra Jap counter</li>
+        <li>पूजा अलार्म · Puja alarms</li>
+        <li>YouTube भजन वीडियो · YouTube Bhajan videos</li>
+      </ul>
+      <p style="margin-top:12px;">यह ऐप पूर्णतः ऑफलाइन काम करता है (YouTube वीडियो को छोड़कर)।<br>
+         The app works fully offline (except YouTube videos which require internet).</p>
+    </div>
+  </div>
+
+  <!-- 3. License -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <div class="section-title">
+        <span class="hi">लाइसेंस</span>
+        <span class="en">License to Use</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>Yunok आपको एक सीमित, गैर-एकस्व, हस्तांतरण-अयोग्य लाइसेंस प्रदान करता है:<br>
+         Yunok grants you a limited, non-exclusive, non-transferable license to:</p>
+      <ul class="clean" style="margin-top:8px;">
+        <li>ऐप को अपने Android डिवाइस पर इंस्टॉल और उपयोग करना · Install and use the app on your Android device</li>
+        <li>केवल व्यक्तिगत, गैर-व्यावसायिक उद्देश्यों के लिए · For personal, non-commercial purposes only</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4. Intellectual Property -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <div class="section-title">
+        <span class="hi">बौद्धिक संपदा</span>
+        <span class="en">Intellectual Property</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>ऐप का डिज़ाइन, कोड, UI, लोगो और ग्राफिक्स Yunok की संपत्ति हैं।<br>
+         The app's design, code, UI, logo, and graphics are the property of Yunok.</p>
+      <div class="highlight">
+        धार्मिक ग्रंथ (चालीसा, आरती, बजरंग बाण, मंत्र) सार्वजनिक डोमेन से हैं।<br>
+        Religious texts (Chalisa, Aarti, Bajrang Baan, Mantras) are from the public domain.
+      </div>
+      <p>आप निम्नलिखित नहीं कर सकते · You may NOT:</p>
+      <ul class="clean" style="margin-top:8px;">
+        <li>ऐप को कॉपी, संशोधित या वितरित करना · Copy, modify, or distribute the app</li>
+        <li>ऐप को रिवर्स इंजीनियर करना · Reverse engineer the app</li>
+        <li>ऐप की सामग्री का व्यावसायिक उपयोग · Use app content for commercial purposes</li>
+        <li>ऐप का नाम या ब्रांड का दुरुपयोग · Misuse the app name or brand</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5. Advertisements -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <div class="section-title">
+        <span class="hi">विज्ञापन (Google AdMob)</span>
+        <span class="en">Advertisements</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>ऐप में Google AdMob के माध्यम से विज्ञापन दिखाए जाते हैं।<br>
+         The app displays advertisements via Google AdMob.</p>
+      <ul class="clean" style="margin-top:8px;">
+        <li>विज्ञापन की सामग्री Google द्वारा नियंत्रित होती है · Ad content is controlled by Google</li>
+        <li>विज्ञापन हटाने के लिए कोई इन-ऐप खरीदारी उपलब्ध नहीं है · No in-app purchase to remove ads</li>
+        <li>आप Google Settings से personalised ads बंद कर सकते हैं · You can opt out via Google Settings</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6. Firebase Analytics -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <div class="section-title">
+        <span class="hi">Analytics (Firebase)</span>
+        <span class="en">Analytics &amp; Crash Reporting</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>हम Google Firebase Analytics और Crashlytics का उपयोग ऐप सुधार के लिए करते हैं।<br>
+         We use Google Firebase Analytics and Crashlytics to improve the app.</p>
+      <p>एकत्र किया गया डेटा गुमनाम और समेकित होता है — किसी व्यक्ति की पहचान नहीं की जाती।<br>
+         Collected data is anonymised and aggregated — no individual is identified.</p>
+    </div>
+  </div>
+
+  <!-- 7. YouTube -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <div class="section-title">
+        <span class="hi">YouTube सामग्री</span>
+        <span class="en">YouTube Content</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>ऐप में हनुमान चालीसा के YouTube वीडियो एम्बेड हैं।<br>
+         The app embeds YouTube videos of Hanuman Chalisa.</p>
+      <ul class="clean" style="margin-top:8px;">
+        <li>वीडियो YouTube के Terms of Service के अधीन हैं · Videos are subject to YouTube's Terms of Service</li>
+        <li>वीडियो देखने के लिए इंटरनेट आवश्यक है · Internet connection required to watch videos</li>
+        <li>वीडियो की उपलब्धता YouTube पर निर्भर है · Video availability depends on YouTube</li>
+      </ul>
+      <p style="margin-top:10px; font-size:13px; color:rgba(255,248,240,0.55);">
+        YouTube ToS: <a href="https://www.youtube.com/t/terms" style="color:var(--saffron)">youtube.com/t/terms</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- 8. User Responsibilities -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <div class="section-title">
+        <span class="hi">उपयोगकर्ता की जिम्मेदारियां</span>
+        <span class="en">User Responsibilities</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>आप सहमत हैं कि आप · You agree to:</p>
+      <ul class="clean" style="margin-top:8px;">
+        <li>ऐप का उपयोग केवल व्यक्तिगत, धार्मिक उद्देश्यों के लिए करेंगे · Use the app only for personal, religious purposes</li>
+        <li>किसी भी अवैध गतिविधि के लिए ऐप का उपयोग नहीं करेंगे · Not use the app for any illegal activity</li>
+        <li>धार्मिक सामग्री के साथ सम्मानपूर्वक व्यवहार करेंगे · Treat religious content respectfully</li>
+        <li>ऐप को हैक या दुरुपयोग नहीं करेंगे · Not hack or misuse the app</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 9. Disclaimer -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <div class="section-title">
+        <span class="hi">अस्वीकरण</span>
+        <span class="en">Disclaimer &amp; Limitation of Liability</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="highlight">
+        यह ऐप "जैसा है" (as-is) प्रदान किया जाता है — बिना किसी वारंटी के।<br>
+        This app is provided "as-is" without warranties of any kind.
+      </div>
+      <p>हम निम्नलिखित के लिए उत्तरदायी नहीं हैं · We are not liable for:</p>
+      <ul class="clean" style="margin-top:8px;">
+        <li>ऐप की अस्थायी अनुपलब्धता · Temporary unavailability of the app</li>
+        <li>डेटा हानि · Data loss</li>
+        <li>तृतीय-पक्ष सेवाओं (AdMob, Firebase, YouTube) से होने वाली समस्याएं · Issues from third-party services</li>
+        <li>इंटरनेट कनेक्शन की आवश्यकता वाली सुविधाएं · Features requiring internet connectivity</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 10. Changes -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <div class="section-title">
+        <span class="hi">शर्तों में बदलाव</span>
+        <span class="en">Changes to These Terms</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>हम इन शर्तों को किसी भी समय बदल सकते हैं। बदलाव के बाद ऐप का उपयोग जारी रखना नई शर्तों की स्वीकृति माना जाएगा।<br>
+         We may modify these terms at any time. Continued use of the app after changes constitutes your acceptance of the new terms.</p>
+    </div>
+  </div>
+
+  <!-- 11. Governing Law -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <div class="section-title">
+        <span class="hi">लागू कानून</span>
+        <span class="en">Governing Law</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>ये शर्तें भारत के कानूनों के अनुसार नियंत्रित और व्याख्यायित होती हैं।<br>
+         These Terms shall be governed by and construed in accordance with the laws of India.</p>
+    </div>
+  </div>
+
+  <!-- 12. Contact -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">12</span>
+      <div class="section-title">
+        <span class="hi">संपर्क करें</span>
+        <span class="en">Contact Us</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>किसी भी प्रश्न के लिए · For any questions about these Terms:</p>
+      <div class="contact-card">
+        <p>🏢 <strong>Yunok</strong></p>
+        <p>📧 <a href="mailto:support@yunok.in">support@yunok.in</a></p>
+        <p>📱 App: <code>com.yunok.hanuman.app</code></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-logo">🙏 हनुमान चालीसा</div>
+    <p>Hanuman Chalisa · com.yunok.hanuman.app</p>
+    <p>© 2025 Yunok. All rights reserved.</p>
+    <p style="margin-top:8px; color:var(--kesari); font-size:12px;">
+      जय बजरंग बली · Jai Bajrang Bali
+    </p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — हनुमान चालीसा · Hanuman Chalisa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron:   #FF8C00;
+    --kesari:    #FF5A00;
+    --gold:      #FFB300;
+    --bg0:       #0A0200;
+    --bg1:       #120500;
+    --bg2:       #1E0900;
+    --bg3:       #2D1200;
+    --text:      #FFF8F0;
+    --text-muted:#C8843A;
+    --text-dim:  #7A4A1A;
+    --sep:       rgba(255,140,0,0.15);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--bg0);
+    color: var(--text);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 15px;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  /* Background mandala pattern */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,90,0,0.08) 0%, transparent 70%),
+      radial-gradient(circle at 10% 80%, rgba(255,140,0,0.04) 0%, transparent 50%),
+      radial-gradient(circle at 90% 20%, rgba(255,179,0,0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* ── Hero header ── */
+  .hero {
+    text-align: center;
+    padding: 60px 24px 48px;
+    border-bottom: 1px solid var(--sep);
+    position: relative;
+  }
+
+  .hero-om {
+    font-size: 52px;
+    margin-bottom: 8px;
+    display: block;
+    filter: drop-shadow(0 0 20px rgba(255,140,0,0.5));
+  }
+
+  .hero-app {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(22px, 5vw, 36px);
+    font-weight: 700;
+    color: var(--saffron);
+    line-height: 1.25;
+    margin-bottom: 6px;
+    text-shadow: 0 0 40px rgba(255,140,0,0.3);
+  }
+
+  .hero h1 span {
+    display: block;
+    font-size: 0.6em;
+    color: var(--gold);
+    opacity: 0.8;
+    font-weight: 400;
+  }
+
+  .badge {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 5px 16px;
+    border: 1px solid var(--sep);
+    border-radius: 20px;
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+  }
+
+  /* ── Ornament divider ── */
+  .ornament {
+    text-align: center;
+    margin: 36px 0 28px;
+    position: relative;
+  }
+  .ornament::before, .ornament::after {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--text-dim));
+    vertical-align: middle;
+    margin: 0 12px;
+  }
+  .ornament::after {
+    background: linear-gradient(to left, transparent, var(--text-dim));
+  }
+  .ornament span { color: var(--saffron); font-size: 14px; }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 40px;
+    background: rgba(255,140,0,0.03);
+    border: 1px solid var(--sep);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 24px 14px;
+    border-bottom: 1px solid var(--sep);
+    background: rgba(255,90,0,0.05);
+  }
+
+  .section-num {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--kesari);
+    background: rgba(255,90,0,0.15);
+    padding: 3px 9px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    flex: 1;
+  }
+
+  .section-title .hi {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+  }
+
+  .section-title .en {
+    font-size: 12px;
+    color: rgba(255,179,0,0.55);
+    letter-spacing: 0.5px;
+  }
+
+  .section-body {
+    padding: 20px 24px;
+    color: rgba(255,248,240,0.8);
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .section-body p { margin-bottom: 12px; }
+  .section-body p:last-child { margin-bottom: 0; }
+
+  /* ── Sub-heading ── */
+  .sub-heading {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--saffron);
+    margin: 16px 0 8px;
+    text-transform: uppercase;
+  }
+
+  /* ── Highlight box ── */
+  .highlight {
+    background: rgba(255,140,0,0.07);
+    border-left: 3px solid var(--saffron);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 13.5px;
+  }
+
+  /* ── List ── */
+  ul.clean {
+    list-style: none;
+    padding: 0;
+  }
+  ul.clean li {
+    padding: 4px 0 4px 20px;
+    position: relative;
+    font-size: 14px;
+    color: rgba(255,248,240,0.75);
+  }
+  ul.clean li::before {
+    content: '•';
+    position: absolute;
+    left: 4px;
+    color: var(--kesari);
+  }
+
+  /* ── Tag badges ── */
+  .tag {
+    display: inline-block;
+    background: rgba(255,90,0,0.12);
+    border: 1px solid rgba(255,90,0,0.25);
+    color: var(--saffron);
+    font-size: 11px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin: 2px 3px 2px 0;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Contact card ── */
+  .contact-card {
+    background: rgba(255,140,0,0.06);
+    border: 1px solid var(--sep);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-top: 8px;
+  }
+  .contact-card a {
+    color: var(--saffron);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,140,0,0.3);
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 40px 24px 20px;
+    border-top: 1px solid var(--sep);
+    color: var(--text-dim);
+    font-size: 13px;
+    line-height: 2;
+  }
+
+  .footer-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    color: var(--saffron);
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: 600px) {
+    .section-body { padding: 16px 18px; }
+    .section-header { padding: 14px 18px 12px; }
+    .hero { padding: 40px 16px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <span class="hero-om">🪔</span>
+    <p class="hero-app">com.yunok.hanuman.app</p>
+    <h1>
+      गोपनीयता नीति
+      <span>Privacy Policy</span>
+    </h1>
+    <div class="badge">Last Updated · अंतिम अपडेट: April 2025</div>
+  </div>
+
+  <div class="ornament"><span>✦ ॥ श्री हनुमते नमः ॥ ✦</span></div>
+
+  <!-- 1. Introduction -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <div class="section-title">
+        <span class="hi">परिचय</span>
+        <span class="en">Introduction</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>Yunok ("हम", "our") ने <strong>Hanuman Chalisa</strong> ऐप (Package: <code>com.yunok.hanuman.app</code>) बनाया है।</p>
+      <p>Yunok ("we", "our") built the <strong>Hanuman Chalisa</strong> app. This Privacy Policy explains how we collect, use, and protect your information when you use our application.</p>
+      <p>इस ऐप का उपयोग करके आप इस नीति से सहमत होते हैं। · By using this app, you agree to this policy.</p>
+    </div>
+  </div>
+
+  <!-- 2. Information Collected -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <div class="section-title">
+        <span class="hi">हम कौन सी जानकारी एकत्र करते हैं</span>
+        <span class="en">Information We Collect</span>
+      </div>
+    </div>
+    <div class="section-body">
+
+      <p class="sub-heading">A · Firebase Analytics (Google)</p>
+      <div class="highlight">
+        हम Google Firebase Analytics का उपयोग करते हैं जो स्वचालित रूप से एकत्र करता है:<br>
+        We use Google Firebase Analytics which automatically collects:
+      </div>
+      <ul class="clean">
+        <li>App usage events — screen views, button taps, feature usage</li>
+        <li>Device type, Android OS version, app version</li>
+        <li>Approximate location (country / region level only — not GPS)</li>
+        <li>App session duration and frequency</li>
+        <li>Crash reports and performance data</li>
+      </ul>
+      <p style="margin-top:12px; font-size:13px; color:rgba(255,248,240,0.55);">
+        यह डेटा गुमनाम और समेकित होता है — किसी व्यक्ति से नहीं जोड़ा जाता।<br>
+        This data is anonymised and aggregated — never linked to any individual.
+      </p>
+
+      <p class="sub-heading" style="margin-top:20px;">B · Google AdMob</p>
+      <div class="highlight">
+        हम विज्ञापन दिखाने के लिए Google AdMob का उपयोग करते हैं।<br>
+        We use Google AdMob to display advertisements. AdMob may collect:
+      </div>
+      <ul class="clean">
+        <li>Android Advertising ID (GAID) — can be reset anytime in device settings</li>
+        <li>Approximate location for relevant advertisements</li>
+        <li>IP address and device identifiers</li>
+        <li>Ad interaction data (impressions, clicks, conversions)</li>
+      </ul>
+      <p style="margin-top:12px; font-size:13px; color:rgba(255,248,240,0.55);">
+        AdMob नीति: <a href="https://policies.google.com/privacy" style="color:var(--saffron)">policies.google.com/privacy</a>
+      </p>
+
+      <p class="sub-heading" style="margin-top:20px;">C · Local Storage (Device Only · केवल डिवाइस पर)</p>
+      <p>निम्नलिखित डेटा केवल आपके डिवाइस पर सहेजा जाता है — हमारे सर्वर पर कभी नहीं:<br>
+         The following is stored only on your device — never transmitted to our servers:</p>
+      <ul class="clean">
+        <li>दैनिक जाप गिनती · Daily mantra jap count</li>
+        <li>पूजा अलार्म समय · Puja alarm times</li>
+        <li>थीम और फ़ॉन्ट सेटिंग · Theme &amp; font preferences</li>
+        <li>अर्थ दिखाने की प्राथमिकता · Meaning display preference</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3. How We Use -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <div class="section-title">
+        <span class="hi">जानकारी का उपयोग</span>
+        <span class="en">How We Use Your Information</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <ul class="clean">
+        <li>ऐप प्रदर्शन सुधारना और बग ठीक करना · Improve app performance and fix bugs</li>
+        <li>उपयोगकर्ता अनुभव को समझना · Understand how users interact with the app</li>
+        <li>AdMob के माध्यम से विज्ञापन दिखाना · Show advertisements via Google AdMob</li>
+        <li>क्रैश रिपोर्ट विश्लेषण · Analyse crash reports via Firebase Crashlytics</li>
+        <li>नई सुविधाओं की प्राथमिकता तय करना · Prioritise new features</li>
+      </ul>
+      <div class="highlight" style="margin-top:16px;">
+        🚫 हम आपकी जानकारी कभी नहीं बेचते, किराए पर देते या व्यावसायिक रूप से साझा करते।<br>
+        We never sell, rent, or commercially share your personal information.
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Third-Party Services -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <div class="section-title">
+        <span class="hi">तृतीय-पक्ष सेवाएं</span>
+        <span class="en">Third-Party Services Used</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>हमारा ऐप निम्नलिखित Google सेवाओं का उपयोग करता है। इनकी अपनी गोपनीयता नीतियां हैं:<br>
+         Our app uses the following Google services, each with their own privacy policies:</p>
+      <br>
+      <span class="tag">Firebase Analytics</span>
+      <span class="tag">Google AdMob</span>
+      <span class="tag">YouTube Player</span>
+      <br><br>
+      <ul class="clean">
+        <li>Firebase Analytics — <a href="https://firebase.google.com/support/privacy" style="color:var(--saffron)">firebase.google.com/support/privacy</a></li>
+        <li>Google AdMob — <a href="https://policies.google.com/privacy" style="color:var(--saffron)">policies.google.com/privacy</a></li>
+        <li>YouTube — <a href="https://www.youtube.com/t/terms" style="color:var(--saffron)">youtube.com/t/terms</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5. Advertising ID -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <div class="section-title">
+        <span class="hi">विज्ञापन आईडी रीसेट / Opt-Out</span>
+        <span class="en">Reset Your Advertising ID</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="highlight">
+        <strong>Android — Reset Advertising ID:</strong><br>
+        Settings → Google → Ads → Reset Advertising ID
+      </div>
+      <div class="highlight" style="margin-top:8px;">
+        <strong>Android — Opt out of personalised ads:</strong><br>
+        Settings → Google → Ads → Opt out of Ads Personalisation
+      </div>
+      <p style="margin-top:12px;">आप किसी भी समय personalised विज्ञापन बंद कर सकते हैं।<br>
+         You can opt out of personalised advertising at any time.</p>
+    </div>
+  </div>
+
+  <!-- 6. Children -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <div class="section-title">
+        <span class="hi">बच्चों की गोपनीयता</span>
+        <span class="en">Children's Privacy</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>यह ऐप 13 वर्ष से कम आयु के बच्चों से जानबूझकर व्यक्तिगत जानकारी एकत्र नहीं करता।<br>
+         This app does not knowingly collect personal information from children under 13 years of age.</p>
+      <p>यदि आप एक माता-पिता हैं और आपको लगता है कि आपके बच्चे ने जानकारी प्रदान की है, तो हमसे संपर्क करें।<br>
+         If you are a parent and believe your child has provided information, please contact us.</p>
+    </div>
+  </div>
+
+  <!-- 7. Security -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <div class="section-title">
+        <span class="hi">डेटा सुरक्षा</span>
+        <span class="en">Data Security</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>हम उचित तकनीकी और संगठनात्मक उपाय करते हैं।<br>
+         We implement appropriate technical and organisational measures to protect your information.</p>
+      <p>हालांकि, इंटरनेट पर 100% सुरक्षा की गारंटी नहीं दी जा सकती।<br>
+         However, no method of internet transmission is 100% secure.</p>
+    </div>
+  </div>
+
+  <!-- 8. Changes -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <div class="section-title">
+        <span class="hi">नीति में बदलाव</span>
+        <span class="en">Changes to This Policy</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>हम इस नीति को समय-समय पर अपडेट कर सकते हैं। बदलाव होने पर ऐप के अंदर सूचना दी जाएगी।<br>
+         We may update this policy periodically. Changes will be notified within the app.</p>
+      <p>जारी उपयोग नई नीति की स्वीकृति माना जाएगा। · Continued use constitutes acceptance of updated policy.</p>
+    </div>
+  </div>
+
+  <!-- 9. Contact -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <div class="section-title">
+        <span class="hi">संपर्क करें</span>
+        <span class="en">Contact Us</span>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>किसी भी प्रश्न के लिए · For any privacy-related questions:</p>
+      <div class="contact-card">
+        <p>🏢 <strong>Yunok</strong></p>
+        <p>📧 <a href="mailto:support@yunok.in">support@yunok.in</a></p>
+        <p>📱 App: <code>com.yunok.hanuman.app</code></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-logo">🙏 हनुमान चालीसा</div>
+    <p>Hanuman Chalisa · com.yunok.hanuman.app</p>
+    <p>© 2025 Yunok. All rights reserved.</p>
+    <p style="margin-top:8px; color:var(--kesari); font-size:12px;">
+      जय बजरंग बली · Jai Bajrang Bali
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
